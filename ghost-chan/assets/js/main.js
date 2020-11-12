@@ -14,7 +14,6 @@
 		$main = $('#main'),
 		$main_articles = $main.children('article');
 
-
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -27,13 +26,10 @@
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
-        if ($('#loader').length) {
-            $('#loader').fadeOut();
-        }
-        window.setTimeout(function() {
-            $body.removeClass('is-preload');
-        }, 500);
-    });
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+		});
 
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
@@ -401,8 +397,5 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
-
-
-
 
 })(jQuery);
