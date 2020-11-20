@@ -45,7 +45,6 @@
 								<p> ゴーストピングを検出するために作成されたヂスコードボットは、すべてのサーバーで使用できます。</p>
                                 <a id="dinvitelink" rel="noreferrer noopener" href="https://discord.com/oauth2/authorize?client_id=699457008759472200&permissions=2113268855&scope=bot" target="_blank"><i class="fab fa-discord"></i>Invite to Discord</a>
 								<ul class="icons">
-									<li><a href="https://www.instagram.com/vi.channnnn/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/vichannnnn" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</div>
@@ -53,10 +52,7 @@
 						<nav>
 							<ul>
 								<li><a href="#commands">Commands</a></li>
-                                <li class="donatelink"><a href="https://www.paypal.me/vichannn"><i class="fab fa-paypal"></i>Donate</a></li>
                                 <li><a rel="noreferrer noopener" href="https://discord.gg/FG9V6QW" target="_blank"><i class="fab fa-discord"></i>Ghost-chan's Support</a></li>
-								<li><a href="https://himaa.xyz/">Home</a></li>
-								<li class="donatelink"><a href="https://www.patreon.com/vichannnn"><i class="fab fa-patreon"></i>Patreon</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -157,31 +153,6 @@
 					<footer id="footer">
 						<p class="copyright">&copy; vισℓεт cℓσυ∂. Design: <a href="https://html5up.net">HTML5 UP</a>.<br /><br /></p>
 					</footer>
-				<div id="paypal-button-container"></div>
-
-
-		<script>
-          paypal.Buttons({
-    createOrder: function(data, actions) {
-      // This function sets up the details of the transaction, including the amount and line item details.
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '10.00'
-          }
-        }]
-      });
-    },
-    onApprove: function(data, actions) {
-      // This function captures the funds from the transaction.
-      return actions.order.capture().then(function(details) {
-        // This function shows a transaction success message to your buyer.
-        alert('Transaction completed by ' + details.payer.name.given_name);
-      });
-    }
-  }).render('#paypal-button-container');
-        </script>
-
 			</div>
 
 		<!-- BG -->
